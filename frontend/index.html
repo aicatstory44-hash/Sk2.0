@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="SK 2.0 - Personal AI Assistant"
+    >
+
+    <title>SK 2.0 — Home</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-top">
+
+            <div class="brand">
+
+                <div class="brand-logo">
+                    SK
+                </div>
+
+                <div class="brand-text">
+                    <strong>SK 2.0</strong>
+                    <span>Personal AI</span>
+                </div>
+
+            </div>
+
+            <button
+                class="close-menu"
+                id="closeMenu"
+                type="button">
+                ×
+            </button>
+
+        </div>
+
+
+        <nav class="navigation">
+
+            <a
+                href="index.html"
+                class="nav-item active">
+
+                <span class="nav-icon">💬</span>
+                <span>Chat</span>
+
+            </a>
+
+         
+            
+
+            <a
+                href="preview.html"
+                class="nav-item">
+
+                <span class="nav-icon">🌐</span>
+                <span>Code Preview</span>
+
+            </a>
+
+
+            <a
+                href="voice.html"
+                class="nav-item">
+
+                <span class="nav-icon">🎙️</span>
+                <span>Live Voice</span>
+
+            </a>
+
+
+            <a
+                href="devices.html"
+                class="nav-item">
+
+                <span class="nav-icon">📱</span>
+                <span>Devices</span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a
+                href="settings.html"
+                class="nav-item">
+
+                <span class="nav-icon">⚙️</span>
+                <span>Settings</span>
+
+            </a>
+
+
+            <div class="connection">
+
+                <span
+                    id="connectionDot"
+                    class="connection-dot">
+                </span>
+
+                <div>
+                    <strong id="connectionText">
+                        Checking...
+                    </strong>
+
+                    <small>
+                        System status
+                    </small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Mobile Overlay -->
+
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay">
+    </div>
+
+
+    <!-- =========================
+         MAIN AREA
+    ========================== -->
+
+    <main class="main">
+
+        <!-- Topbar -->
+
+        <header class="topbar">
+
+            <button
+                id="menuButton"
+                class="menu-button"
+                type="button"
+                aria-label="Open menu">
+
+                ☰
+
+            </button>
+
+
+            <div class="topbar-title">
+
+                <strong>SK 2.0</strong>
+
+                <span>
+                    Personal AI Assistant
+                </span>
+
+            </div>
+
+
+            <button
+                id="themeButton"
+                class="theme-button"
+                type="button"
+                aria-label="Change theme">
+
+                🌙
+
+            </button>
+
+        </header>
+
+
+        <!-- =========================
+             HOME CONTENT
+        ========================== -->
+
+        <section class="home">
+
+            <div class="hero">
+
+                <div class="hero-logo">
+                    SK
+                </div>
+
+                <div class="online-badge">
+
+                    <span></span>
+                    Ready to help
+
+                </div>
+
+                <h1>
+                    Welcome to <span>SK 2.0</span>
+                </h1>
+
+                <p>
+                    Your personal AI assistant for
+                    coding, learning, productivity
+                    and everyday tasks.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Actions -->
+
+            <div class="section-title">
+
+                <h2>Quick Actions</h2>
+
+                <span>
+                    Start something
+                </span>
+
+            </div>
+
+
+            <div class="quick-grid">
+
+                <button
+                    class="quick-card"
+                    data-prompt="Help me learn HTML from basic to advanced.">
+
+                    <div class="quick-icon">📚</div>
+
+                    <div>
+                        <strong>Learn</strong>
+
+                        <span>
+                            Learn programming step by step
+                        </span>
+                    </div>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    data-prompt="Create a modern responsive website using HTML, CSS and JavaScript.">
+
+                    <div class="quick-icon">💻</div>
+
+                    <div>
+                        <strong>Create Website</strong>
+
+                        <span>
+                            Build a website with code
+                        </span>
+                    </div>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    data-prompt="Explain JavaScript in simple Urdu with examples.">
+
+                    <div class="quick-icon">🧠</div>
+
+                    <div>
+                        <strong>Ask SK</strong>
+
+                        <span>
+                            Get simple explanations
+                        </span>
+                    </div>
+
+                </button>
+
+
+                <button
+                    class="quick-card"
+                    data-prompt="Help me debug my code step by step.">
+
+                    <div class="quick-icon">🔧</div>
+
+                    <div>
+                        <strong>Debug Code</strong>
+
+                        <span>
+                            Find and fix coding errors
+                        </span>
+                    </div>
+
+                </button>
+
+            </div>
+
+
+            <!-- Chat -->
+
+            <div class="chat-area">
+
+                <div
+                    id="chatBox"
+                    class="chat-box">
+
+                    <div class="message assistant">
+
+                        <div class="message-avatar">
+                            SK
+                        </div>
+
+                        <div class="message-bubble">
+
+                            <strong>SK 2.0</strong>
+
+                            <p>
+                                Assalamualaikum! 👋
+                                I'm ready to help you.
+                                Ask me anything.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="loading"
+                    class="loading hidden">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <small>
+                        SK is thinking...
+                    </small>
+
+                </div>
+
+
+                <!-- Chat Form -->
+
+                <form
+                    id="chatForm"
+                    class="chat-form">
+
+                    <button
+                        id="voiceButton"
+                        type="button"
+                        title="Voice">
+
+                        🎙️
+
+                    </button>
+
+
+                    <input
+                        id="messageInput"
+                        type="text"
+                        placeholder="Message SK 2.0..."
+                        autocomplete="off"
+                    >
+
+
+                    <button
+                        id="sendButton"
+                        type="submit"
+                        title="Send">
+
+                        ➤
+
+                    </button>
+
+                </form>
+
+                <small class="privacy-note">
+                    SK 2.0 • Your personal AI workspace
+                </small>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         MOBILE BOTTOM NAV
+    ========================== -->
+
+    <nav class="bottom-nav">
+
+        <a
+            href="index.html"
+            class="bottom-item active">
+
+            <span>💬</span>
+            <small>Chat</small>
+
+        </a>
+
+
+
+
+
+        <a
+            href="voice.html"
+            class="bottom-item">
+
+            <span>🎙️</span>
+            <small>Voice</small>
+
+        </a>
+<a
+            href="Devices.html"
+            class="bottom-item">
+
+            <span>📱</span>
+            <small>Devices</small>
+
+        </a>
+
+
+        <a
+            href="settings.html"
+            class="bottom-item">
+
+            <span>⚙️</span>
+            <small>Settings</small>
+
+        </a>
+
+    </nav>
+
+</div>
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
