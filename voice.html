@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SK 2.0 — Voice Assistant</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/voice.css">
+</head>
+
+<body>
+
+    <!-- Mobile Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-header">
+            <div class="brand">
+                <div class="brand-logo">SK</div>
+
+                <div>
+                    <h2>SK 2.0</h2>
+                    <span>AI Assistant</span>
+                </div>
+            </div>
+
+            <button class="close-menu" id="closeMenu">×</button>
+        </div>
+
+        <nav class="navigation">
+
+            <a href="index.html" class="nav-item">
+                <span>🏠</span>
+                <span>Home</span>
+            </a>
+
+           
+
+            <a href="preview.html" class="nav-item">
+                <span>▶️</span>
+                <span>Code Preview</span>
+            </a>
+
+            <a href="voice.html" class="nav-item active">
+                <span>🎙️</span>
+                <span>Voice</span>
+            </a>
+
+            <a href="devices.html" class="nav-item">
+                <span>📱</span>
+                <span>Devices</span>
+            </a>
+
+            <a href="settings.html" class="nav-item">
+                <span>⚙️</span>
+                <span>Settings</span>
+            </a>
+
+        </nav>
+
+        <div class="connection-status">
+            <span class="connection-dot" id="connectionDot"></span>
+            <span id="connectionText">Checking...</span>
+        </div>
+
+    </aside>
+
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Topbar -->
+        <header class="topbar">
+
+            <button class="menu-button" id="menuButton">
+                ☰
+            </button>
+
+            <div class="topbar-title">
+                <h1>Voice Assistant</h1>
+                <span>Talk naturally with SK 2.0</span>
+            </div>
+
+            <button class="theme-button" id="themeButton">
+                🌙
+            </button>
+
+        </header>
+
+
+        <!-- Voice Interface -->
+        <section class="voice-page">
+
+            <div class="voice-header">
+
+                <span class="page-badge">
+                    LIVE VOICE
+                </span>
+
+                <h2>
+                    Talk with <span>SK 2.0</span>
+                </h2>
+
+                <p>
+                    Press the microphone button and start speaking.
+                </p>
+
+            </div>
+
+
+            <!-- Voice Card -->
+            <div class="voice-card">
+
+                <!-- Status -->
+                <div class="voice-status">
+
+                    <div
+                        class="status-dot"
+                        id="voiceStatusDot"
+                    ></div>
+
+                    <span id="voiceStatus">
+                        Ready
+                    </span>
+
+                </div>
+
+
+                <!-- Orb -->
+                <div
+                    class="voice-orb-container"
+                    id="voiceOrbContainer"
+                >
+
+                    <div class="voice-ring ring-one"></div>
+                    <div class="voice-ring ring-two"></div>
+                    <div class="voice-ring ring-three"></div>
+
+                    <div
+                        class="voice-orb"
+                        id="voiceOrb"
+                    >
+                        <div class="orb-inner">
+                            <span>SK</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Wave -->
+                <div
+                    class="voice-wave"
+                    id="voiceWave"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+
+                <!-- Transcript -->
+                <div class="voice-transcript">
+
+                    <div class="transcript-label">
+                        You said
+                    </div>
+
+                    <p id="transcript">
+                        Press the microphone and speak...
+                    </p>
+
+                </div>
+
+
+                <!-- Response -->
+                <div class="voice-response">
+
+                    <div class="response-label">
+                        SK 2.0
+                    </div>
+
+                    <p id="voiceResponse">
+                        I'm ready to listen.
+                    </p>
+
+                </div>
+
+
+                <!-- Controls -->
+                <div class="voice-controls">
+
+                    <button
+                        class="voice-main-button"
+                        id="voiceMainButton"
+                        aria-label="Start voice"
+                    >
+                        <span id="voiceButtonIcon">🎙️</span>
+                    </button>
+
+                    <button
+                        class="voice-stop-button"
+                        id="voiceStopButton"
+                        disabled
+                    >
+                        ■ Stop
+                    </button>
+
+                </div>
+
+
+                <div class="voice-hint">
+                    <span>🎤</span>
+                    <span>
+                        Tap the microphone to start
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- Voice Features -->
+            <div class="voice-features">
+
+                <div class="voice-feature">
+                    <span>🎤</span>
+                    <div>
+                        <strong>Speech Recognition</strong>
+                        <p>
+                            Your browser converts speech into text.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="voice-feature">
+                    <span>🧠</span>
+                    <div>
+                        <strong>AI Brain</strong>
+                        <p>
+                            Your voice can later be sent to SK's AI backend.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="voice-feature">
+                    <span>🔊</span>
+                    <div>
+                        <strong>Text to Speech</strong>
+                        <p>
+                            Browser TTS is used as the current fallback.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="bottom-item">
+            <span>🏠</span>
+            <small>Home</small>
+        </a>
+
+       
+
+        <a href="preview.html" class="bottom-item">
+            <span>▶️</span>
+            <small>Preview</small>
+        </a>
+
+        <a href="voice.html" class="bottom-item active">
+            <span>🎙️</span>
+            <small>Voice</small>
+        </a>
+
+        <a href="settings.html" class="bottom-item">
+            <span>⚙️</span>
+            <small>Settings</small>
+        </a>
+
+    </nav>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/voice.js"></script>
+
+</body>
+</html>
